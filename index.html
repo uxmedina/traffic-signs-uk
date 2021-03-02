@@ -13,8 +13,41 @@
 		body {
 			font-family: 'Roboto', sans-serif;
 		}
+		.bg-black {
+			background: #000;
+		}
+		.hero {
+			max-width: 620px;
+			display: grid;
+		}
+		.hero h1 {
+			max-width: 365px;
+		}
+		.hero .hero-buttons {
+			display: flex;
+			flex-direction: column; 
+		}
+		.hero .hero-buttons .btn-main-custom {
+			border: 3px solid #fff;
+			background: none;
+			text-transform: uppercase;
+		}
+		.hero .hero-buttons .btn-main-custom:hover {
+			background: #fff;
+			color: #000;
+		}
+
+		.hero .hero-buttons .btn-secondary-custom {
+			border: none;
+			background: none;
+			text-transform: uppercase;
+		}
+		.hero .hero-buttons .btn-secondary-custom:hover {
+			background: #333;
+		}
+
 		.container-custom {
-			max-width: 840px ;
+			max-width: 840px;
 		}
 		.card {
 			height: 100%;
@@ -42,13 +75,13 @@
 
 	<!--Main Nav -->
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">Traffic Signs 🇬🇧</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <div class="collapse navbar-collapse " id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
 	          <a class="nav-link" href="#orders">Orders</a>
@@ -69,6 +102,20 @@
 	    </div>
 	  </div>
 	</nav>
+	
+	<section class="pt-5 pb-4 container-fluid bg-black">
+		<div class="row">
+			<div class="col-lg-6 col-md-8 mx-auto hero text-center pt-1">
+				<h1 class="text-white mx-auto">A better way to learn the highway code</h1>
+				<p class="text-white mx-auto">All the information contained in this website comes from the government's website. We just thought it needed a bit of a revamp :)</p>
+				<div class="hero-buttons">
+					<a href="#" class="btn btn-primary my-2 btn-main-custom col-lg-3 mx-auto">Start</a>
+					<a href="#" class="btn btn-secondary my-2 btn-secondary-custom col-lg-3 mx-auto">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 
 
 	<!--Main Nav Ends-->
@@ -77,18 +124,6 @@
 	<!-- Content Begins -->
 
 	<main class="container-fluid pt-2">
-		<section class="py-5 text-center container">
-			<div class="row py-lg-5">
-				<div class="col-lg-6 col-md-8 mx-auto">
-					<h1 class="fw-light">Traffic Signs UK</h1>
-					<p class="lead text-muted">All the information contained in this website comes from the government's website. We just thought it needed a bit of a revamp :)</p>
-					<p>
-						<a href="#" class="btn btn-primary my-2">Learn more</a>
-						<a href="#" class="btn btn-secondary my-2">Go to gov website</a>
-					</p>
-				</div>
-			</div>
-		</section>
 		<div class="wrap bg-light">
 			<!------------Signs Giving Orders START-------------->
 			<section class="container container-custom py-5" id="orders">
