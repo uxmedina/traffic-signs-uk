@@ -1,0 +1,56 @@
+body {
+			font-family: 'Roboto', sans-serif;
+		}
+		.bg-black {
+			background: #000;
+		}
+		.hero {
+			max-width: 620px;
+			display: grid;
+		}
+		.hero h1 {
+			max-width: 365px;
+		}
+		.hero .hero-buttons {
+			display: flex;
+			flex-direction: column; 
+		}
+		.hero .hero-buttons .btn-main-custom {
+			border: 3px solid #fff;
+			background: none;
+			text-transform: uppercase;
+		}
+		.hero .hero-buttons .btn-main-custom:hover {
+			background: #fff;
+			color: #000;
+		}
+
+		.hero .hero-buttons .btn-secondary-custom {
+			border: none;
+			background: none;
+			text-transform: uppercase;
+		}
+		.hero .hero-buttons .btn-secondary-custom:hover {
+			background: #333;
+		}
+
+		.container-custom {
+			max-width: 840px;
+		}
+		.card {
+			height: 100%;
+		}
+		.card .card-img {
+			text-align: center;
+			height: 180px;
+		}
+		.card .card-img img{
+			width: auto;
+			max-height: 180px;
+			max-width: 100%; 
+		}
+		.card .card-img .btn {
+			position: absolute;
+			top: .25rem;
+			right: .25rem;
+		}
