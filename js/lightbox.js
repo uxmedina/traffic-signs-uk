@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 
   	$('.sign-image').attr('src', sign);  
 
-    $('.enlarged-sign').show();
+   
 
 
     });
