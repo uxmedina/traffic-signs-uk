@@ -69,10 +69,22 @@
 
 	<main class="container-fluid pt-2">
 
-
-<div class="modal-dialog modal-fullscreen-sm-down enlarged-sign" id="enlargedSign">
-	<img src="img/sign-giving-order-ahead-only.jpg" class="sign-image">
-	<p class="sign-intro"></p>
+<div class="modal fade enlarged-sign" id="enlargedSign">
+	<div class="modal-dialog modal-fullscreen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+		        <h5 class="modal-title">Traffic Sign</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	      	<div class="modal-body">
+	      		<p><img src="img/sign-giving-order-ahead-only.jpg" class="sign-image"></p>
+				<p class="sign-intro"></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -94,7 +106,7 @@
 						<div class="card py-2 shadow-sm">
 							<div class="card-img">
 								<img src="img/sign-giving-order-ahead-only.jpg" class="card-img-top" alt="Ahead only">
-								<button href="#" class="btn btn-secondary btn-sm enlarge">
+								<button href="#" class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
 									<i class="fas fa-search-plus"></i>
 								</button>
 							</div>
@@ -107,9 +119,9 @@
 						<div class="card py-2 shadow-sm">
 							<div class="card-img">
 								<img src="img/sign-giving-order-turn-left-ahead.jpg" class="card-img-top" alt="Turn left ahead (right if symbol reversed)">
-								<a href="#" class="btn btn-secondary btn-sm enlarge">
+								<button href="#" class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
 									<i class="fas fa-search-plus"></i>
-								</a>
+								</button>
 							</div>
 							<div class="card-body">
 								<p class="card-text">Turn left ahead (right if symbol reversed)</p>
