@@ -16,7 +16,8 @@ jQuery(document).ready(function(){
 
     $('.sign-intro').html(text);
 
-  	$('.sign-image').attr('src', sign);  
+  	$('.sign-image').attr('src', sign);
+  	$('.sign-image').attr('alt', text);    
 
    
 
