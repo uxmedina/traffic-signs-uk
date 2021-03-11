@@ -17,1930 +17,1922 @@
 </head>
 <body class="pt-5">
 
-	<!--Main Nav -->
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Traffic Signs 🇬🇧</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-right">
-	        <li class="nav-item">
-	          <a class="nav-link" href="#orders">Orders</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#warnings">Warnings</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#directions">Directions</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#information">Information</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#roadWorks">Road works</a>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+<!--Main Nav -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Traffic Signs 🇬🇧</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-right">
+        <li class="nav-item">
+          <a class="nav-link" href="#orders">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#warnings">Warnings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#directions">Directions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#information">Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#roadWorks">Road works</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	
-	<section class="pt-5 pb-4 container-fluid bg-black">
-		<div class="row">
-			<div class="col-lg-6 col-md-8 mx-auto hero text-center pt-1">
-				<h1 class="text-white mx-auto">A better way to learn the highway code</h1>
-				<p class="text-white mx-auto">All the information contained in this website comes from the government's website. We just thought it needed a bit of a revamp :)</p>
-				<div class="hero-buttons">
-					<a href="#" class="btn btn-primary my-2 btn-main-custom col-lg-3 mx-auto">Start</a>
-					<a href="#" class="btn btn-secondary my-2 btn-secondary-custom col-lg-3 mx-auto">Learn More</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-
-	<!--Main Nav Ends-->
-
-
-	<!-- Content Begins -->
-
-	<main class="container-fluid pt-2">
-
-<div class="modal fade enlarged-sign" id="enlargedSign">
-	<div class="modal-dialog modal-fullscreen-sm-down">
-		<div class="modal-content">
-			<div class="modal-header">
-		        <h5 class="modal-title">Traffic Sign</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      	</div>
-	      	<div class="modal-body">
-	      		<p><img src="img/sign-giving-order-ahead-only.jpg" class="sign-image"></p>
-				<p class="sign-intro"></p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<section class="pt-5 pb-4 container-fluid bg-black">
+	<div class="row">
+		<div class="col-lg-6 col-md-8 mx-auto hero text-center pt-1">
+			<h1 class="text-white mx-auto">A better way to learn the highway code</h1>
+			<p class="text-white mx-auto">All the information contained in this website comes from the government's website. We just thought it needed a bit of a revamp :)</p>
+			<div class="hero-buttons">
+				<a href="#" class="btn btn-primary my-2 btn-main-custom col-lg-3 mx-auto">Start</a>
+				<a href="#" class="btn btn-secondary my-2 btn-secondary-custom col-lg-3 mx-auto">Learn More</a>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
+<!--Main Nav Ends-->
+
+
+<!-- Content Begins -->
+
+<main class="container-fluid pt-2">
+	<!--Dynamic Modal -->
+	<div class="modal fade enlarged-sign" id="enlargedSign">
+		<div class="modal-dialog modal-fullscreen-sm-down">
+			<div class="modal-content">
+				<div class="modal-header">
+			        <h5 class="modal-title">Traffic Sign</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	</div>
+		      	<div class="modal-body">
+		      		<p><img src="img/sign-giving-order-ahead-only.jpg" class="sign-image"></p>
+					<p class="sign-intro"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-		<div class="wrap bg-light">
-			<!------------Signs Giving Orders START-------------->
-			<section class="container container-custom py-5" id="orders">
-				<!--
-				<header class="col-md-12">
-					<h2>
-						Signs Giving Orders
-					</h2>
-				</header>
-				<h3 class="lead text-left py-3 pb-3">Signs with blue circles but no red border mostly give positive instruction.</h3>
-				-->
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-					<!--POSITIVE INSTRUCTION BEGINS-->
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-ahead-only.jpg" class="card-img-top" alt="Ahead only">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Ahead only</p>
-							</div>
+	<div class="wrap bg-light">
+		<!------------Signs Giving Orders START-------------->
+		<section class="container container-custom py-5" id="orders">
+			<!--
+			<header class="col-md-12">
+				<h2>
+					Signs Giving Orders
+				</h2>
+			</header>
+			<h3 class="lead text-left py-3 pb-3">Signs with blue circles but no red border mostly give positive instruction.</h3>
+			-->
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<!--POSITIVE INSTRUCTION BEGINS-->
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-ahead-only.jpg" class="card-img-top" alt="Ahead only">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-turn-left-ahead.jpg" class="card-img-top" alt="Turn left ahead (right if symbol reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Turn left ahead (right if symbol reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-turn-left.jpg" class="card-img-top" alt="Turn left (right if symbol reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Turn left (right if symbol reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-keep-left.jpg" class="card-img-top" alt="Keep left (right if symbol reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Keep left (right if symbol reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-vehicle-pass-either-side.jpg" class="card-img-top" alt="Vehicles may pass either side to reach same destination">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Vehicles may pass either side to reach same destination</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-mini-roundabout.jpg" class="card-img-top" alt="Mini-roundabout (roundabout circulation - give way to vehicles from the immediate right)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Mini-roundabout (roundabout circulation - give way to vehicles from the immediate right)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-route-pedal-cycles-only.jpg" class="card-img-top" alt="Route to be used by pedal cycles only">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Route to be used by pedal cycles only</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-segregated-cycle-pedestrian-route.jpg" class="card-img-top" alt="Segregated pedal cycle and pedestrian route">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Segregated pedal cycle and pedestrian route</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-minimum-speed.jpg" class="card-img-top" alt="Minimum speed">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Minimum speed</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-minimum-speed-end.jpg" class="card-img-top" alt="End of minimum speed">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">End of minimum speed</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-buses-cycles-only.jpg" class="card-img-top" alt="Buses and cycles only">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Buses and cycles only</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-trams-only.jpg" class="card-img-top" alt="Trams only">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Trams only</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-pedestrian-crossing-tramway.jpg" class="card-img-top" alt="Pedestrian crossing point over tramway">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Pedestrian crossing point over tramway</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-one-way-traffic.jpg" class="card-img-top" alt="Pedestrian crossing point over tramway">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">One-way traffic (note: compare circular ‘Ahead only’ sign</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-with-flow-bus-cycle-lane.jpg" class="card-img-top" alt="With-flow bus and cycle lane">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">With-flow bus and cycle lane</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-contra-flow-bus-lane.jpg" class="card-img-top" alt="Contra-flow bus lane">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Contra-flow bus lane</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-with-flow-pedal-cycle-lane.jpg" class="card-img-top" alt="With-flow pedal cycle lane">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">With-flow pedal cycle lane</p>
-							</div>
+						<div class="card-body">
+							<p class="card-text">Ahead only</p>
 						</div>
 					</div>
 				</div>
-				<!--POSITIVE INSTRUCTION ENDS-->
-				<!--PROHIBITIVE MESSAGE STARTS-->
-				<hr class="divider mt-5"> 
-				<h3 class="lead text-left py-4 mb-4">Signs with red circles are mostly prohibitive. Plates below signs qualify their message.</h3>
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-entry-20-zone.jpg" class="card-img-top"  alt="Entry to 20 mph zone">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Entry to 20 mph zone</p>							
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-end-20-zonev2.jpg" class="card-img-top" alt="End of 20 mph zone">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">End of 20 mph zone</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-maximum-speed.jpg" class="card-img-top" alt="Maximum speed">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Maximum speed</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-national-speed-limit.jpg" class="card-img-top" alt="National speed limit applies">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">National speed limit applies</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-school-crossing-patrol.jpg" class="card-img-top" alt="School crossing patrol">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">School crossing patrol</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-stop-give-way.jpg" class="card-img-top" alt="Stop and give way">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Stop and give way</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-give-way.jpg" class="card-img-top" alt="Give way to traffic on major road">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Give way to traffic on major road</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-manually-stop.jpg" class="card-img-top" alt="Manually operated temporary STOP and GO signs">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Manually operated temporary STOP and GO signs</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-manually-go.jpg" class="card-img-top" alt="Manually operated temporary STOP and GO signs">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Manually operated temporary STOP and GO signs</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-entry-vehicular-traffic.jpg" class="card-img-top" alt="No entry for vehicular traffic">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No entry for vehicular traffic</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-vehicles.jpg" class="card-img-top" alt="No vehicles except bicycles being pushed">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No vehicles except bicycles being pushed</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-cycling.jpg" class="card-img-top" alt="No cycling">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No cycling</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-motor-vehicles.jpg" class="card-img-top" alt="No motor vehicles">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No motor vehicles</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-buses.jpg" class="card-img-top" alt="No buses (over 8 passenger seats)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No buses (over 8 passenger seats)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-overtaking.jpg" class="card-img-top" alt="No overtaking">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No overtaking</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-towed-caravans.jpg" class="card-img-top" alt="No towed caravans">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No towed caravans</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-vehicles-carry-explosives.jpg" class="card-img-top" alt="No vehicles carrying explosives">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No vehicles carrying explosives</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-vehicle-combination-length.jpg" class="card-img-top" alt="No vehicle or combination of vehicles over length shown">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No vehicle or combination of vehicles over length shown</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-vehicles-over-height.jpg" class="card-img-top" alt="No vehicles over height shown">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No vehicles over height shown</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-vehicle-width.jpg" class="card-img-top" alt="No vehicles over width shown">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No vehicles over width shown</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-give-priority-vehicles.jpg" class="card-img-top" alt="Give priority to vehicles from opposite direction">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Give priority to vehicles from opposite direction</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-right-turn.jpg" class="card-img-top" alt="No right turn">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No right turn</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-left-turn.jpg" class="card-img-top" alt="No left turn">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No left turn</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-u-turn.jpg" class="card-img-top" alt="No u-turn">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No u-turn</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-u-turn.jpg" class="card-img-top" alt="No u-turn">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No u-turn</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-goods-vehicle-over-weight.jpg" class="card-img-top" alt="No goods vehicles over maximum gross weight shown (in tonnes) except for loading and unloading">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No goods vehicles over maximum gross weight shown (in tonnes) except for loading and unloading</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-vehicles-max-gross-weight.jpg" class="card-img-top" alt="No vehicles over maximum gross weight shown (in tonnes)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No vehicles over maximum gross weight shown (in tonnes)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-park-restrict-permit-holders.jpg" class="card-img-top" alt="Parking restricted to permit holders">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Parking restricted to permit holders</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-red-route.jpg" class="card-img-top" alt="No stopping during period indicated except for buses">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No stopping during period indicated except for buses</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-stopping-times.jpg" class="card-img-top" alt="No stopping during times shown except for as long as necessary to set down or pick up passengers">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No stopping during times shown except for as long as necessary to set down or pick up passengers</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-waiting.jpg" class="card-img-top" alt="No waiting">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No waiting</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-no-stopping.jpg" class="card-img-top" alt="No stopping (Clearway)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">No stopping (Clearway)</p>
-							</div>
-						</div>
-					</div>
-					<!--PROHIBITIVE MESSAGE ends-->
-				</div>
-			</section>
-			<!------------Signs Giving Orders END-------------->
-			<!------------WARNING Signs START-------------->
-			<section class="container py-5 container-custom" id="warnings">
-				<header class="col-md-12">
-					<h2>
-						Warning Signs
-					</h2>
-				</header>
-				<h3 class="lead text-left py-3 pb-3">Mostly triangular.</h3>
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-distance-to-stop-line-ahead-100-yards.jpg" class="card-img-top" alt="Distance to ‘STOP’ line ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Distance to ‘STOP’ line ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-dual-carriageway-ends.jpg" class="card-img-top" alt="Dual carriageway ends">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Dual carriageway ends</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-road-narrow.jpg" class="card-img-top" alt="Road narrows on right (left if symbol reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Road narrows on right (left if symbol reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-road-narrow-both-sides.jpg" class="card-img-top" alt="Road narrows on both sides">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Road narrows on both sides</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-distance-to-stop-line-ahead-50-yards.jpg" class="card-img-top" alt="Distance to ‘Give Way’ line ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Distance to ‘Give Way’ line ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-crossroads.jpg" class="card-img-top" alt="Crossroads">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Crossroads</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-junction-on-bend-ahead.jpg" class="card-img-top" alt="Junction on bend ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Junction on bend ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-t-junction-with-priority.jpg" class="card-img-top" alt="T-junction with priority over vehicles from the right">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">T-junction with priority over vehicles from the right</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-staggered-junction.jpg" class="card-img-top" alt="Staggered junction">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Staggered junction</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-staggered-junction.jpg" class="card-img-top" alt="Staggered junction">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Staggered junction</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-traffic-merging-left.jpg" class="card-img-top" alt="Traffic merging from left ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Traffic merging from left ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-double-bend.jpg" class="card-img-top" alt="Double bend first to left (symbol may be reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Double bend first to left (symbol may be reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-bend-to-right.jpg" class="card-img-top" alt="Bend to right (or left if symbol reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Bend to right (or left if symbol reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-roundabout.jpg" class="card-img-top" alt="Roundabout">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Bend to right (or left if symbol reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-uneven-road.jpg" class="card-img-top" alt="Uneven road">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Uneven road</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-plate-below-some-signs.jpg" class="card-img-top" alt="Plate below some signs">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Plate below some signs</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-two-way-traffic-crosses-road.jpg" class="card-img-top" alt="Two-way traffic crosses one-way road">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Two-way traffic crosses one-way road</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-two-way-traffic-ahead.jpg" class="card-img-top" alt="Two-way traffic straight ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Two-way traffic straight ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-swing-bridge.jpg" class="card-img-top" alt="Opening or swing bridge ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Opening or swing bridge ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-aircraft.jpg" class="card-img-top" alt="Low-flying aircraft or sudden aircraft noise">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Low-flying aircraft or sudden aircraft noise</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-falling-rocks.jpg" class="card-img-top" alt="Falling or fallen rocks">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Falling or fallen rocks</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-traffic-signals-not-in-use.jpg" class="card-img-top" alt="Traffic signals not in use">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Traffic signals not in use</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-traffic-signals.jpg" class="card-img-top" alt="Traffic signals">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Traffic signals</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-slippery-road.jpg" class="card-img-top" alt="Slippery road">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Slippery road</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-steep-hill-downwards.jpg" class="card-img-top" alt="Steep hill downwards">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Steep hill downwards</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-steep-hill-upwards.jpg" class="card-img-top" alt="Steep hill upwards">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Steep hill upwards</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-tunnel-ahead.jpg" class="card-img-top" alt="Tunnel ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Tunnel ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-trams-crossing-ahead.jpg" class="card-img-top" alt="Trams crossing ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Trams crossing ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-level-crossing-ahead-barrier-or-gate.jpg" class="card-img-top" alt="Level crossing with barrier or gate ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Level crossing with barrier or gate ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-level-crossing-ahead-without-barrier.jpg" class="card-img-top" alt="Level crossing without barrier or gate ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Level crossing without barrier or gate ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-level-crossing-without-barrier-ahead.jpg" class="card-img-top" alt="Level crossing without barrier">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Level crossing without barrier</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/sign-giving-order-school-crossing-patrol.jpg" class="card-img-top" alt="School crossing patrol ahead (some signs have amber lights which flash when crossings are in use)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">School crossing patrol ahead (some signs have amber lights which flash when crossings are in use)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-frail-pedestrians-cross-road-ahead.jpg" class="card-img-top" alt="Frail (or blind or disabled if shown) pedestrians likely to cross road ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Frail (or blind or disabled if shown) pedestrians likely to cross road ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-pedestrians-in-road-ahead.jpg" class="card-img-top" alt="Pedestrians in road ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Pedestrians in road ahead</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-zebra-crossing.jpg" class="card-img-top" alt="Zebra crossing">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Zebra crossing</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-overhead-electric-cables.jpg" class="card-img-top" alt="Overhead electric cable; plate indicates maximum height of vehicles which can pass safely">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Overhead electric cable; plate indicates maximum height of vehicles which can pass safely</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-available-width-head-room.jpg" class="card-img-top" alt="Available width of headroom indicated">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Available width of headroom indicated</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-sharp-deviation-of-route.jpg" class="card-img-top" alt="Sharp deviation of route to left (or right if chevrons reversed)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Sharp deviation of route to left (or right if chevrons reversed)</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-light-signals-ahead.jpg" class="card-img-top" alt="Light signals ahead at level crossing, airfield or bridge">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Light signals ahead at level crossing, airfield or bridge</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-level-crossing-minature.jpg" class="card-img-top" alt="Miniature warning lights at level crossings">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Miniature warning lights at level crossings</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-cattle.jpg" class="card-img-top" alt="Cattle">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Cattle</p>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-wild-animals.jpg" alt="Wild animals">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Wild animals</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-wild-horses.jpg" alt="Wild horses or ponies">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Wild horses or ponies</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-accompanied-horses.jpg" alt="Accompanied horses or ponies">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Accompanied horses or ponies</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-cycle-route-ahead.jpg" alt="Cycle route ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Cycle route ahead</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-risk-of-ice.jpg" alt="Risk of ice">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Risk of ice</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-traffic-queues.jpg" alt="Traffic queues likely ahead">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Traffic queues likely ahead</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-distance-humps-extend.jpg" alt="Distance over which road humps extend">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Distance over which road humps extend</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-other-danger.jpg" alt="Other danger; plate indicates nature of danger">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Other danger; plate indicates nature of danger</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-soft-verges.jpg" alt="Soft verges">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Soft verges</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-side-winds.jpg" alt="Side winds">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Side winds</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-hump-bridge.jpg" alt="Hump bridge">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-							<p class="card-text">Hump bridge</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-worded-sign-ford.jpg" alt="Worded warning sign">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Worded warning sign</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-quayside-or-riverbank.jpg" alt="Quayside or river bank">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Quayside or river bank</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/warning-sign-risk-of-grounding.jpg" alt="Risk of grounding">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Risk of grounding</p>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</section>
-			<!-- WARNING SIGNS END-->
-			<!-- DIRECTION SIGNS BEGIN -->
-			<section class="container container-custom py-5" id="directions">
-				<header class="col-md-12">
-					<h2>
-						Direction Signs
-					</h2>
-				</header>
-				<h3 class="lead text-left py-3 pb-3">
-					Mostly rectancular. <br/>
-					Signs on motorways - blue backgrounds
-				</h3>
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a448e5274a1521000001/direction-sign-blue-junction-leading-to-motorway.jpg" alt="At a junction leading directly into a motorway (junction number may be shown on a black background)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">At a junction leading directly into a motorway (junction number may be shown on a black background)</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="img/direction-sign-blue-approach-to-junction.jpg" alt="On approaches to junctions (junction number on black background)">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">On approaches to junctions (junction number on black background)</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a49e40f0b6151f000001/direction-sign-blue-route-sign.jpg" alt="Route confirmatory sign after junction">
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Route confirmatory sign after junction</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a4c0ed915d155c000005/direction-sign-blue-get-in-lane.jpg" alt="Downward pointing arrows mean ‘Get in lane’ The left-hand lane leads to a different destination from the other lanes."> 
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">Downward pointing arrows mean ‘Get in lane’ 
-								The left-hand lane leads to a different destination from the other lanes.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card py-2 shadow-sm">
-							<div class="card-img">
-								<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a4e940f0b6151c000003/direction-sign-blue-destination-leaving-motorway.jpg" alt="The panel with the inclined arrow indicates the destinations which can be reached by leaving the motorway at the next junction"> 
-								<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-									<i class="fas fa-search-plus"></i>
-								</button>
-							</div>
-							<div class="card-body">
-								<p class="card-text">The panel with the inclined arrow indicates the destinations which can be reached by leaving the motorway at the next junction</p>
-							</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-turn-left-ahead.jpg" class="card-img-top" alt="Turn left ahead (right if symbol reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Turn left ahead (right if symbol reversed)</p>
 						</div>
 					</div>
 				</div>
-				<h3 class="col-12">Signs on primary routes - green backgrounds</h3>
-				<p class="col-12">Blue panels indicate that the motorway starts at the junction ahead.
-				Motorways shown in brackets can also be reached along the route indicated. White panels indicate local or non-primary routes leading from the junction ahead.
-				Brown panels show the route to tourist attractions.
-				The name of the junction may be shown at the top of the sign.
-				The aircraft symbol indicates the route to an airport.
-				A symbol may be included to warn of a hazard or restriction along that route.</p> 
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-					
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a74fed915d155c000007/direction-sign-green-approach-junction-roundabout.jpg" alt="On approaches to junctions"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">On approaches to junctions</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.publishing.service.gov.uk/media/581715bded915d61c5000007/direction-sign-green-at-junction.jpg" alt="At the junction"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">At the junction</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a7afed915d155f000003/direction-sign-green-route-sign.jpg" alt="Route confirmatory sign after junction"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Route confirmatory sign after junction</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="img/direction-sign-green-approach-junction.jpg" alt="On approaches to junctions"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">On approaches to junctions</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a7e7e5274a151e000001/direction-sign-green-billingual.jpg" alt="On approach to a junction in Wales (bilingual)"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">On approach to a junction in Wales (bilingual)</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a812e5274a1521000005/direction-sign-green-ring-road-crossroads.jpg" alt="Primary route forming part of a ring road"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Primary route forming part of a ring road</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a82ce5274a151e000003/direction-sign-green-primary-route-ring-road.jpg" alt="Primary route forming part of a ring road"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Primary route forming part of a ring road</p>
-		</div>
-	</div>
-</div>
-
-<h3 id="signs-on-non-primary-and-local-routes---black-borders">Signs on non-primary and local routes - black borders</h3>
-Green panels indicate that the primary route starts at the junction ahead. Route numbers on a blue background show the direction to a motorway. Route numbers on a green background show the direction to a primary route. 
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8aeabed915d155f000005/direction-sign-black-border-approach-junction-crossroads.jpg" alt="On approaches to junctions"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">On approaches to junctions</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8aec7ed915d155f000007/direction-sign-black-border-approach-junction.jpg" alt="On approaches to junctions">
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">On approaches to junctions</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8aef1e5274a151e00000f/direction-sign-black-border-at-junction.jpg" alt="At the junction"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">At the junction</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8af1540f0b6151c000007/direction-sign-black-border-toilets-disabled-access.jpg" alt="Direction to toilets with access for the disabled"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Direction to toilets with access for the disabled</p>
-		</div>
-	</div>
-</div>
-
-<h3 id="other-direction-signs">Other direction signs</h3>
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a938e5274a1521000007/direction-sign-other-picnic-site.jpg" alt="Picnic site"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Picnic site</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a952e5274a151e000005/direction-sign-other-english-heritage.jpg" alt="Ancient monument in the care of English Heritage"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Ancient monument in the care of English Heritage</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a965e5274a151e000007/direction-sign-other-direction-car-park.jpg" alt="Direction to a car park"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Direction to a car park</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a98740f0b6151f000005/direction-sign-other-tourist-attraction.jpg" alt="Tourist attraction"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Tourist attraction</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a9a140f0b6151f000007/direction-sign-other-camping-caravan.jpg" alt="Direction to camping and caravan site"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Direction to camping and caravan site</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a9b9e5274a151e000009/direction-sign-other-advisory-route-lorries.jpg" alt="Advisory route for lorries"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Advisory route for lorries</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab18e5274a1521000009/direction-sign-other-route-pedal-cycles.jpg" alt="Route for pedal cycles forming part of a network"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Route for pedal cycles forming part of a network</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab49e5274a151e00000b/direction-sign-other-recommended-route-cycle.jpg" alt="Recommended route for pedal cycles to place shown"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Recommended route for pedal cycles to place shown</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab66e5274a152100000b/direction-sign-other-route-pedestrians.jpg" alt="Route for pedestrians"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Route for pedestrians</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab86ed915d155c000009/direction-sign-other-emergency-diversion-square.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abace5274a151e00000d/direction-sign-other-emergency-diversion-triangle.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abc2e5274a152100000d/direction-sign-other-emergency-diversion-diamond.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abd6e5274a152100000f/direction-sign-other-emergency-diversion-circle.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
-		</div>
-	</div>
-</div>
-
-<div class="col">
-	<div class="card py-2 shadow-sm">
-		<div class="card-img">
-			<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abf540f0b6151c000005/direction-sign-other-diversion-route.jpg" alt="Diversion route"> 
-			<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
-				<i class="fas fa-search-plus"></i>
-			</button>
-		</div>
-		<div class="card-body">
-			<p class="card-text">Diversion route</p>
-		</div>
-	</div>
-</div>
-
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-turn-left.jpg" class="card-img-top" alt="Turn left (right if symbol reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Turn left (right if symbol reversed)</p>
+						</div>
+					</div>
 				</div>
-			</section>
-		</div>
-	</main>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-keep-left.jpg" class="card-img-top" alt="Keep left (right if symbol reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Keep left (right if symbol reversed)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-vehicle-pass-either-side.jpg" class="card-img-top" alt="Vehicles may pass either side to reach same destination">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Vehicles may pass either side to reach same destination</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-mini-roundabout.jpg" class="card-img-top" alt="Mini-roundabout (roundabout circulation - give way to vehicles from the immediate right)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Mini-roundabout (roundabout circulation - give way to vehicles from the immediate right)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-route-pedal-cycles-only.jpg" class="card-img-top" alt="Route to be used by pedal cycles only">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Route to be used by pedal cycles only</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-segregated-cycle-pedestrian-route.jpg" class="card-img-top" alt="Segregated pedal cycle and pedestrian route">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Segregated pedal cycle and pedestrian route</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-minimum-speed.jpg" class="card-img-top" alt="Minimum speed">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Minimum speed</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-minimum-speed-end.jpg" class="card-img-top" alt="End of minimum speed">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">End of minimum speed</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-buses-cycles-only.jpg" class="card-img-top" alt="Buses and cycles only">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Buses and cycles only</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-trams-only.jpg" class="card-img-top" alt="Trams only">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Trams only</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-pedestrian-crossing-tramway.jpg" class="card-img-top" alt="Pedestrian crossing point over tramway">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Pedestrian crossing point over tramway</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-one-way-traffic.jpg" class="card-img-top" alt="Pedestrian crossing point over tramway">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">One-way traffic (note: compare circular ‘Ahead only’ sign</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-with-flow-bus-cycle-lane.jpg" class="card-img-top" alt="With-flow bus and cycle lane">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">With-flow bus and cycle lane</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-contra-flow-bus-lane.jpg" class="card-img-top" alt="Contra-flow bus lane">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Contra-flow bus lane</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-with-flow-pedal-cycle-lane.jpg" class="card-img-top" alt="With-flow pedal cycle lane">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">With-flow pedal cycle lane</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--POSITIVE INSTRUCTION ENDS-->
+			<!--PROHIBITIVE MESSAGE STARTS-->
+			<hr class="divider mt-5"> 
+			<h3 class="lead text-left py-4 mb-4">Signs with red circles are mostly prohibitive. Plates below signs qualify their message.</h3>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-entry-20-zone.jpg" class="card-img-top"  alt="Entry to 20 mph zone">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Entry to 20 mph zone</p>							
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-end-20-zonev2.jpg" class="card-img-top" alt="End of 20 mph zone">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">End of 20 mph zone</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-maximum-speed.jpg" class="card-img-top" alt="Maximum speed">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Maximum speed</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-national-speed-limit.jpg" class="card-img-top" alt="National speed limit applies">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">National speed limit applies</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-school-crossing-patrol.jpg" class="card-img-top" alt="School crossing patrol">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">School crossing patrol</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-stop-give-way.jpg" class="card-img-top" alt="Stop and give way">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Stop and give way</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-give-way.jpg" class="card-img-top" alt="Give way to traffic on major road">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Give way to traffic on major road</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-manually-stop.jpg" class="card-img-top" alt="Manually operated temporary STOP and GO signs">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Manually operated temporary STOP and GO signs</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-manually-go.jpg" class="card-img-top" alt="Manually operated temporary STOP and GO signs">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Manually operated temporary STOP and GO signs</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-entry-vehicular-traffic.jpg" class="card-img-top" alt="No entry for vehicular traffic">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No entry for vehicular traffic</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-vehicles.jpg" class="card-img-top" alt="No vehicles except bicycles being pushed">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No vehicles except bicycles being pushed</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-cycling.jpg" class="card-img-top" alt="No cycling">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No cycling</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-motor-vehicles.jpg" class="card-img-top" alt="No motor vehicles">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No motor vehicles</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-buses.jpg" class="card-img-top" alt="No buses (over 8 passenger seats)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No buses (over 8 passenger seats)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-overtaking.jpg" class="card-img-top" alt="No overtaking">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No overtaking</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-towed-caravans.jpg" class="card-img-top" alt="No towed caravans">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No towed caravans</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-vehicles-carry-explosives.jpg" class="card-img-top" alt="No vehicles carrying explosives">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No vehicles carrying explosives</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-vehicle-combination-length.jpg" class="card-img-top" alt="No vehicle or combination of vehicles over length shown">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No vehicle or combination of vehicles over length shown</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-vehicles-over-height.jpg" class="card-img-top" alt="No vehicles over height shown">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No vehicles over height shown</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-vehicle-width.jpg" class="card-img-top" alt="No vehicles over width shown">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No vehicles over width shown</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-give-priority-vehicles.jpg" class="card-img-top" alt="Give priority to vehicles from opposite direction">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Give priority to vehicles from opposite direction</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-right-turn.jpg" class="card-img-top" alt="No right turn">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No right turn</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-left-turn.jpg" class="card-img-top" alt="No left turn">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No left turn</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-u-turn.jpg" class="card-img-top" alt="No u-turn">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No u-turn</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-u-turn.jpg" class="card-img-top" alt="No u-turn">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No u-turn</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-goods-vehicle-over-weight.jpg" class="card-img-top" alt="No goods vehicles over maximum gross weight shown (in tonnes) except for loading and unloading">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No goods vehicles over maximum gross weight shown (in tonnes) except for loading and unloading</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-vehicles-max-gross-weight.jpg" class="card-img-top" alt="No vehicles over maximum gross weight shown (in tonnes)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No vehicles over maximum gross weight shown (in tonnes)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-park-restrict-permit-holders.jpg" class="card-img-top" alt="Parking restricted to permit holders">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Parking restricted to permit holders</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-red-route.jpg" class="card-img-top" alt="No stopping during period indicated except for buses">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No stopping during period indicated except for buses</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-stopping-times.jpg" class="card-img-top" alt="No stopping during times shown except for as long as necessary to set down or pick up passengers">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No stopping during times shown except for as long as necessary to set down or pick up passengers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-waiting.jpg" class="card-img-top" alt="No waiting">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No waiting</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-no-stopping.jpg" class="card-img-top" alt="No stopping (Clearway)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">No stopping (Clearway)</p>
+						</div>
+					</div>
+				</div>
+				<!--PROHIBITIVE MESSAGE ends-->
+			</div>
+		</section>
+		<!------------Signs Giving Orders END-------------->
+		<!------------WARNING Signs START-------------->
+		<section class="container py-5 container-custom" id="warnings">
+			<header class="col-md-12">
+				<h2>
+					Warning Signs
+				</h2>
+			</header>
+			<h3 class="lead text-left py-3 pb-3">Mostly triangular.</h3>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-distance-to-stop-line-ahead-100-yards.jpg" class="card-img-top" alt="Distance to ‘STOP’ line ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Distance to ‘STOP’ line ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-dual-carriageway-ends.jpg" class="card-img-top" alt="Dual carriageway ends">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Dual carriageway ends</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-road-narrow.jpg" class="card-img-top" alt="Road narrows on right (left if symbol reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Road narrows on right (left if symbol reversed)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-road-narrow-both-sides.jpg" class="card-img-top" alt="Road narrows on both sides">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Road narrows on both sides</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-distance-to-stop-line-ahead-50-yards.jpg" class="card-img-top" alt="Distance to ‘Give Way’ line ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Distance to ‘Give Way’ line ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-crossroads.jpg" class="card-img-top" alt="Crossroads">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Crossroads</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-junction-on-bend-ahead.jpg" class="card-img-top" alt="Junction on bend ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Junction on bend ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-t-junction-with-priority.jpg" class="card-img-top" alt="T-junction with priority over vehicles from the right">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">T-junction with priority over vehicles from the right</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-staggered-junction.jpg" class="card-img-top" alt="Staggered junction">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Staggered junction</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-staggered-junction.jpg" class="card-img-top" alt="Staggered junction">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Staggered junction</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-traffic-merging-left.jpg" class="card-img-top" alt="Traffic merging from left ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Traffic merging from left ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-double-bend.jpg" class="card-img-top" alt="Double bend first to left (symbol may be reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Double bend first to left (symbol may be reversed)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-bend-to-right.jpg" class="card-img-top" alt="Bend to right (or left if symbol reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Bend to right (or left if symbol reversed)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-roundabout.jpg" class="card-img-top" alt="Roundabout">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Bend to right (or left if symbol reversed)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-uneven-road.jpg" class="card-img-top" alt="Uneven road">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Uneven road</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-plate-below-some-signs.jpg" class="card-img-top" alt="Plate below some signs">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Plate below some signs</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-two-way-traffic-crosses-road.jpg" class="card-img-top" alt="Two-way traffic crosses one-way road">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Two-way traffic crosses one-way road</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-two-way-traffic-ahead.jpg" class="card-img-top" alt="Two-way traffic straight ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Two-way traffic straight ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-swing-bridge.jpg" class="card-img-top" alt="Opening or swing bridge ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Opening or swing bridge ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-aircraft.jpg" class="card-img-top" alt="Low-flying aircraft or sudden aircraft noise">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Low-flying aircraft or sudden aircraft noise</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-falling-rocks.jpg" class="card-img-top" alt="Falling or fallen rocks">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Falling or fallen rocks</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-traffic-signals-not-in-use.jpg" class="card-img-top" alt="Traffic signals not in use">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Traffic signals not in use</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-traffic-signals.jpg" class="card-img-top" alt="Traffic signals">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Traffic signals</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-slippery-road.jpg" class="card-img-top" alt="Slippery road">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Slippery road</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-steep-hill-downwards.jpg" class="card-img-top" alt="Steep hill downwards">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Steep hill downwards</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-steep-hill-upwards.jpg" class="card-img-top" alt="Steep hill upwards">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Steep hill upwards</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-tunnel-ahead.jpg" class="card-img-top" alt="Tunnel ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Tunnel ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-trams-crossing-ahead.jpg" class="card-img-top" alt="Trams crossing ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Trams crossing ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-level-crossing-ahead-barrier-or-gate.jpg" class="card-img-top" alt="Level crossing with barrier or gate ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Level crossing with barrier or gate ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-level-crossing-ahead-without-barrier.jpg" class="card-img-top" alt="Level crossing without barrier or gate ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Level crossing without barrier or gate ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-level-crossing-without-barrier-ahead.jpg" class="card-img-top" alt="Level crossing without barrier">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Level crossing without barrier</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/sign-giving-order-school-crossing-patrol.jpg" class="card-img-top" alt="School crossing patrol ahead (some signs have amber lights which flash when crossings are in use)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">School crossing patrol ahead (some signs have amber lights which flash when crossings are in use)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-frail-pedestrians-cross-road-ahead.jpg" class="card-img-top" alt="Frail (or blind or disabled if shown) pedestrians likely to cross road ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Frail (or blind or disabled if shown) pedestrians likely to cross road ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-pedestrians-in-road-ahead.jpg" class="card-img-top" alt="Pedestrians in road ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Pedestrians in road ahead</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-zebra-crossing.jpg" class="card-img-top" alt="Zebra crossing">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Zebra crossing</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-overhead-electric-cables.jpg" class="card-img-top" alt="Overhead electric cable; plate indicates maximum height of vehicles which can pass safely">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Overhead electric cable; plate indicates maximum height of vehicles which can pass safely</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-available-width-head-room.jpg" class="card-img-top" alt="Available width of headroom indicated">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Available width of headroom indicated</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-sharp-deviation-of-route.jpg" class="card-img-top" alt="Sharp deviation of route to left (or right if chevrons reversed)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Sharp deviation of route to left (or right if chevrons reversed)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-light-signals-ahead.jpg" class="card-img-top" alt="Light signals ahead at level crossing, airfield or bridge">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Light signals ahead at level crossing, airfield or bridge</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-level-crossing-minature.jpg" class="card-img-top" alt="Miniature warning lights at level crossings">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Miniature warning lights at level crossings</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-cattle.jpg" class="card-img-top" alt="Cattle">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Cattle</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-wild-animals.jpg" alt="Wild animals">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Wild animals</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-wild-horses.jpg" alt="Wild horses or ponies">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Wild horses or ponies</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-accompanied-horses.jpg" alt="Accompanied horses or ponies">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Accompanied horses or ponies</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-cycle-route-ahead.jpg" alt="Cycle route ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Cycle route ahead</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-risk-of-ice.jpg" alt="Risk of ice">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Risk of ice</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-traffic-queues.jpg" alt="Traffic queues likely ahead">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Traffic queues likely ahead</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-distance-humps-extend.jpg" alt="Distance over which road humps extend">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Distance over which road humps extend</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-other-danger.jpg" alt="Other danger; plate indicates nature of danger">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Other danger; plate indicates nature of danger</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-soft-verges.jpg" alt="Soft verges">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Soft verges</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-side-winds.jpg" alt="Side winds">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Side winds</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-hump-bridge.jpg" alt="Hump bridge">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+						<p class="card-text">Hump bridge</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-worded-sign-ford.jpg" alt="Worded warning sign">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Worded warning sign</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-quayside-or-riverbank.jpg" alt="Quayside or river bank">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Quayside or river bank</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/warning-sign-risk-of-grounding.jpg" alt="Risk of grounding">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Risk of grounding</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- WARNING SIGNS END-->
+		<!-- DIRECTION SIGNS BEGIN -->
+		<section class="container container-custom py-5" id="directions">
+			<header class="col-md-12">
+				<h2>
+					Direction Signs
+				</h2>
+			</header>
+			<h3 class="lead text-left py-3 pb-3">
+				Mostly rectancular. <br/>
+				Signs on motorways - blue backgrounds
+			</h3>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a448e5274a1521000001/direction-sign-blue-junction-leading-to-motorway.jpg" alt="At a junction leading directly into a motorway (junction number may be shown on a black background)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">At a junction leading directly into a motorway (junction number may be shown on a black background)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/direction-sign-blue-approach-to-junction.jpg" alt="On approaches to junctions (junction number on black background)">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">On approaches to junctions (junction number on black background)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a49e40f0b6151f000001/direction-sign-blue-route-sign.jpg" alt="Route confirmatory sign after junction">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Route confirmatory sign after junction</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a4c0ed915d155c000005/direction-sign-blue-get-in-lane.jpg" alt="Downward pointing arrows mean ‘Get in lane’ The left-hand lane leads to a different destination from the other lanes."> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Downward pointing arrows mean ‘Get in lane’ 
+							The left-hand lane leads to a different destination from the other lanes.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a4e940f0b6151c000003/direction-sign-blue-destination-leaving-motorway.jpg" alt="The panel with the inclined arrow indicates the destinations which can be reached by leaving the motorway at the next junction"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">The panel with the inclined arrow indicates the destinations which can be reached by leaving the motorway at the next junction</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="col-12">Signs on primary routes - green backgrounds</h3>
+			<p class="col-12">Blue panels indicate that the motorway starts at the junction ahead.
+			Motorways shown in brackets can also be reached along the route indicated. White panels indicate local or non-primary routes leading from the junction ahead.
+			Brown panels show the route to tourist attractions.
+			The name of the junction may be shown at the top of the sign.
+			The aircraft symbol indicates the route to an airport.
+			A symbol may be included to warn of a hazard or restriction along that route.</p> 
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">									
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a74fed915d155c000007/direction-sign-green-approach-junction-roundabout.jpg" alt="On approaches to junctions"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">On approaches to junctions</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.publishing.service.gov.uk/media/581715bded915d61c5000007/direction-sign-green-at-junction.jpg" alt="At the junction"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">At the junction</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a7afed915d155f000003/direction-sign-green-route-sign.jpg" alt="Route confirmatory sign after junction"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Route confirmatory sign after junction</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="img/direction-sign-green-approach-junction.jpg" alt="On approaches to junctions"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">On approaches to junctions</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a7e7e5274a151e000001/direction-sign-green-billingual.jpg" alt="On approach to a junction in Wales (bilingual)"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">On approach to a junction in Wales (bilingual)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a812e5274a1521000005/direction-sign-green-ring-road-crossroads.jpg" alt="Primary route forming part of a ring road"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Primary route forming part of a ring road</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a82ce5274a151e000003/direction-sign-green-primary-route-ring-road.jpg" alt="Primary route forming part of a ring road"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Primary route forming part of a ring road</p>
+						</div>
+					</div>
+				</div>
+
+				<h3 id="signs-on-non-primary-and-local-routes---black-borders">Signs on non-primary and local routes - black borders</h3>
+				Green panels indicate that the primary route starts at the junction ahead. Route numbers on a blue background show the direction to a motorway. Route numbers on a green background show the direction to a primary route. 
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8aeabed915d155f000005/direction-sign-black-border-approach-junction-crossroads.jpg" alt="On approaches to junctions"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">On approaches to junctions</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8aec7ed915d155f000007/direction-sign-black-border-approach-junction.jpg" alt="On approaches to junctions">
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">On approaches to junctions</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8aef1e5274a151e00000f/direction-sign-black-border-at-junction.jpg" alt="At the junction"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">At the junction</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8af1540f0b6151c000007/direction-sign-black-border-toilets-disabled-access.jpg" alt="Direction to toilets with access for the disabled"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Direction to toilets with access for the disabled</p>
+						</div>
+					</div>
+				</div>
+
+				<h3 id="other-direction-signs">Other direction signs</h3>
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a938e5274a1521000007/direction-sign-other-picnic-site.jpg" alt="Picnic site"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Picnic site</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a952e5274a151e000005/direction-sign-other-english-heritage.jpg" alt="Ancient monument in the care of English Heritage"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Ancient monument in the care of English Heritage</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a965e5274a151e000007/direction-sign-other-direction-car-park.jpg" alt="Direction to a car park"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Direction to a car park</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a98740f0b6151f000005/direction-sign-other-tourist-attraction.jpg" alt="Tourist attraction"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Tourist attraction</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a9a140f0b6151f000007/direction-sign-other-camping-caravan.jpg" alt="Direction to camping and caravan site"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Direction to camping and caravan site</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8a9b9e5274a151e000009/direction-sign-other-advisory-route-lorries.jpg" alt="Advisory route for lorries"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Advisory route for lorries</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab18e5274a1521000009/direction-sign-other-route-pedal-cycles.jpg" alt="Route for pedal cycles forming part of a network"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Route for pedal cycles forming part of a network</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab49e5274a151e00000b/direction-sign-other-recommended-route-cycle.jpg" alt="Recommended route for pedal cycles to place shown"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Recommended route for pedal cycles to place shown</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab66e5274a152100000b/direction-sign-other-route-pedestrians.jpg" alt="Route for pedestrians"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Route for pedestrians</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8ab86ed915d155c000009/direction-sign-other-emergency-diversion-square.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abace5274a151e00000d/direction-sign-other-emergency-diversion-triangle.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abc2e5274a152100000d/direction-sign-other-emergency-diversion-diamond.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abd6e5274a152100000f/direction-sign-other-emergency-diversion-circle.jpg" alt="Symbols showing emergency diversion route for motorway and other main road traffic"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Symbols showing emergency diversion route for motorway and other main road traffic</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card py-2 shadow-sm">
+						<div class="card-img">
+							<img src="https://assets.digital.cabinet-office.gov.uk/media/55b8abf540f0b6151c000005/direction-sign-other-diversion-route.jpg" alt="Diversion route"> 
+							<button class="btn btn-secondary btn-sm enlarge" data-bs-toggle="modal" data-bs-target="#enlargedSign">
+								<i class="fas fa-search-plus"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="card-text">Diversion route</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
 
 	<!-- JS Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
