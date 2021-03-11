@@ -62,6 +62,12 @@ body {
 }
 
 
-.enlarged-sign {
-	display: none;
+.enlarged-sign figure {
+	text-align: center;
+}
+.enlarged-sign figcaption {
+	text-align: left;
+}
+.enlarged-sign .sign-image {
+	max-width: 80%; 
 }
