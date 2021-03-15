@@ -71,3 +71,11 @@ body {
 .enlarged-sign .sign-image {
 	max-width: 80%; 
 }
+
+p {
+	font-weight: 200;
+}
+
+h3.lead {
+	font-weight: 300;
+}
