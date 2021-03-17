@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	position: relative;
 }
 .bg-black {
 	background: #000;
@@ -86,5 +87,10 @@ p {
 
 h3.lead {
 	font-weight: 300;
+}
+
+
+.active {
+	color: red !important;
 }
 
