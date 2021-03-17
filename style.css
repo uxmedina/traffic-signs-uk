@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	position: relative;
 }
 .bg-black {
 	background: #000;
@@ -54,12 +55,20 @@ body {
 	top: .25rem;
 	right: .25rem;
 }
+
+/* MENU */
 @media (min-width: 992px) {
 	.menu-right {
 	position: absolute;
 	right: 10px;
 	}
 }
+
+.menu-right .nav-item .nav-link {
+	color: #fff;
+}
+
+/* FIM MENU */
 
 
 .enlarged-sign figure {
@@ -79,3 +88,9 @@ p {
 h3.lead {
 	font-weight: 300;
 }
+
+
+.active {
+	background-color: #333;
+}
+
