@@ -8,6 +8,13 @@
 
 
 jQuery(document).ready(function(){
+
+	$('.container-custom .col:first-child .card .card-img button').addClass('first-button');
+	$('.container-custom .col:last .card .card-img button').addClass('last-button');
+	
+	var n = $( "#roadWorks .card" ).length;
+	$( ".teste" ).text( "There are " + n + " divs.");
+
     jQuery('.enlarge').on('click', function(){
     var $this = $(this);
 
