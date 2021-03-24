@@ -9,8 +9,9 @@
 
 jQuery(document).ready(function(){
 
-	$('.container-custom .col:first-child .card .card-img button').addClass('first-button');
-	$('.container-custom .col:last .card .card-img button').addClass('last-button');
+	$('.container-custom .col:first-child').addClass('first-card');
+	$('.container-custom .col:last').addClass('last-card');
+	$('#orders button').addClass('order');
 	
 	var n = $( "#roadWorks .card" ).length;
 	$( ".teste" ).text( "There are " + n + " divs.");
@@ -21,9 +22,15 @@ jQuery(document).ready(function(){
 	    var text = $this.parent('div').siblings('.card-body').find('p').text();
 	    var sign = $this.siblings().attr('src');
 
-	    $('.sign-intro').html(text);
+	    var OrderTitle = $("#orders header h2").text();
+	    var WarningTitle = $("#warnings header h2").text();
+	    var DirectionsTitle = $("#directions header h2").text();
+	    var InformationTitle = $("#information header h2").text();
+	    var RoadWorksTitle = $("#roadWorks header h2").text();
 
-	  	$('.sign-image').attr('src', sign);
-	  	$('.sign-image').attr('alt', text);
+		$('.modal-title').html(RoadWorksTitle);
+		$('.sign-intro').html(text);
+		$('.sign-image').attr('src', sign);
+		$('.sign-image').attr('alt', text);
     });
 });
