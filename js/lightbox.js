@@ -12,11 +12,6 @@ jQuery(document).ready(function(){
 	$('.container-custom .col:first-child').addClass('first-card');
 	$('.container-custom .col:last').addClass('last-card');
 	
-
-	
-	var n = $( "#roadWorks .card" ).length;
-	$( ".teste" ).text( "There are " + n + " divs.");
-
     jQuery('.enlarge').on('click', function(){
 	    var $this = $(this);
 
